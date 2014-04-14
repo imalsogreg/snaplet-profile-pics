@@ -1,0 +1,28 @@
+name:          snaplet-profile-pics
+version:       0.1.0
+synopsis:      Profile pictures snaplet for the snap framework
+description:   This snaplet sets up a directory for storing profile pictures
+               and provides some handlers and splices for setting, retrieving,
+               and displaying them.
+license:       BSD3
+license-fil:   LICENSE
+author:        Greg Hale
+maintainer:    imalsogreg@gmail.com
+build-type:    simple
+cabal-version: >= 1.6
+homepage:      https://github.com/ImAlsoGreg/snaplet-profile-pics
+category:      Web, Snap
+
+extra-source-files: LICENSE
+
+data-files: resources/devel.cfg
+
+source-repository head
+ type: git
+ location: https://github.com/ImAlsoGreg/snaplet-profile-pics.git
+
+Library
+ hs-source-dirs:  src
+ exposed-modules: Snap.Snaplet.ProfilePics
+ other-modules:   Paths_snaplet_profile_pics
+
